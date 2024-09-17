@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoCREL</RootNamespace>
+    <AssemblyName>ProyectoCREL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\CompraCon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompraCon.Designer.cs">
+      <DependentUpon>CompraCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CompraMed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompraMed.Designer.cs">
+      <DependentUpon>CompraMed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ComprasMedLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ComprasMedLista.Designer.cs">
+      <DependentUpon>ComprasMedLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Concentrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Concentrado.Designer.cs">
+      <DependentUpon>Concentrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConsultaQuincenal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConsultaQuincenal.Designer.cs">
+      <DependentUpon>ConsultaQuincenal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ControlLeche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ControlLeche.Designer.cs">
+      <DependentUpon>ControlLeche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConcentradoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConcentradoLista.Designer.cs">
+      <DependentUpon>ConcentradoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ComprasConLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ComprasConLista.Designer.cs">
+      <DependentUpon>ComprasConLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Medicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Medicamentos.Designer.cs">
+      <DependentUpon>Medicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PlanillaQuincenal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlanillaQuincenal.Designer.cs">
+      <DependentUpon>PlanillaQuincenal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Prestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Prestamo.Designer.cs">
+      <DependentUpon>Prestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PrestamosLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PrestamosLista.Designer.cs">
+      <DependentUpon>PrestamosLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Proveedor.designer.cs">
+      <DependentUpon>Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProveedorLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProveedorLista.designer.cs">
+      <DependentUpon>ProveedorLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MedicamentosLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MedicamentosLista.Designer.cs">
+      <DependentUpon>MedicamentosLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalidaConcentrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalidaConcentrado.Designer.cs">
+      <DependentUpon>SalidaConcentrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalidaConcentradoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalidaConcentradoLista.Designer.cs">
+      <DependentUpon>SalidaConcentradoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalidaMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalidaMedicamentos.Designer.cs">
+      <DependentUpon>SalidaMedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalidaMedicamentosLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalidaMedicamentosLista.Designer.cs">
+      <DependentUpon>SalidaMedicamentosLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Socio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Socio.Designer.cs">
+      <DependentUpon>Socio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SocioLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SocioLista.Designer.cs">
+      <DependentUpon>SocioLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VistaConcentrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VistaConcentrado.Designer.cs">
+      <DependentUpon>VistaConcentrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VistaMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VistaMedicamentos.Designer.cs">
+      <DependentUpon>VistaMedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VistaPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VistaPrestamos.Designer.cs">
+      <DependentUpon>VistaPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VistaProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VistaProveedores.Designer.cs">
+      <DependentUpon>VistaProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VistaSalidaArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VistaSalidaArticulos.Designer.cs">
+      <DependentUpon>VistaSalidaArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VistaSalidaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VistaSalidaProducto.Designer.cs">
+      <DependentUpon>VistaSalidaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VistaSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VistaSocios.Designer.cs">
+      <DependentUpon>VistaSocios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\CompraCon.resx">
+      <DependentUpon>CompraCon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CompraMed.resx">
+      <DependentUpon>CompraMed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ComprasConLista.resx">
+      <DependentUpon>ComprasConLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ComprasMedLista.resx">
+      <DependentUpon>ComprasMedLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Concentrado.resx">
+      <DependentUpon>Concentrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConcentradoLista.resx">
+      <DependentUpon>ConcentradoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConsultaQuincenal.resx">
+      <DependentUpon>ConsultaQuincenal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ControlLeche.resx">
+      <DependentUpon>ControlLeche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Medicamentos.resx">
+      <DependentUpon>Medicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MedicamentosLista.resx">
+      <DependentUpon>MedicamentosLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlanillaQuincenal.resx">
+      <DependentUpon>PlanillaQuincenal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Prestamo.resx">
+      <DependentUpon>Prestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrestamosLista.resx">
+      <DependentUpon>PrestamosLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Proveedor.resx">
+      <DependentUpon>Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProveedorLista.resx">
+      <DependentUpon>ProveedorLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalidaConcentrado.resx">
+      <DependentUpon>SalidaConcentrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalidaConcentradoLista.resx">
+      <DependentUpon>SalidaConcentradoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalidaMedicamentos.resx">
+      <DependentUpon>SalidaMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalidaMedicamentosLista.resx">
+      <DependentUpon>SalidaMedicamentosLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Socio.resx">
+      <DependentUpon>Socio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SocioLista.resx">
+      <DependentUpon>SocioLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\image-background.JPG" />
+    <Content Include="Resources\login.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
