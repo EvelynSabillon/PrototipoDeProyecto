@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Anticipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Anticipo.Designer.cs">
+      <DependentUpon>Anticipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AnticiposLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AnticiposLista.Designer.cs">
+      <DependentUpon>AnticiposLista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CompraCon.cs">
       <SubType>Form</SubType>
     </Compile>

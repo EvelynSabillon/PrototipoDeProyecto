@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoCREL.Forms
 {
-    public partial class PrestamosLista : Form
+    public partial class AnticiposLista : Form
     {
-        public PrestamosLista()
+        public AnticiposLista()
         {
             InitializeComponent();
-        }
-
-        private void PrestamosLista_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

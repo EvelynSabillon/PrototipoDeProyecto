@@ -385,6 +385,7 @@
             this.MinimizeBox = false;
             this.Name = "PrestamosLista";
             this.Text = "Prestamos";
+            this.Load += new System.EventHandler(this.PrestamosLista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgcrudProv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

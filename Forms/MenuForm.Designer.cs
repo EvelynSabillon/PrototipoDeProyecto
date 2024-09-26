@@ -62,6 +62,7 @@
             this.comprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comprasConcentradoYOtrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.anticiposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -146,7 +147,7 @@
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.cutToolStripMenuItem.Text = "Cor&tar";
             this.cutToolStripMenuItem.Click += new System.EventHandler(this.CutToolStripMenuItem_Click);
             // 
@@ -156,7 +157,7 @@
             this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.copyToolStripMenuItem.Text = "&Copiar";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.CopyToolStripMenuItem_Click);
             // 
@@ -166,7 +167,7 @@
             this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.pasteToolStripMenuItem.Text = "&Pegar";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.PasteToolStripMenuItem_Click);
             // 
@@ -215,7 +216,8 @@
             this.sociosToolStripMenuItem1,
             this.proveedoresToolStripMenuItem,
             this.planillaQuincenalToolStripMenuItem,
-            this.prestamosToolStripMenuItem});
+            this.prestamosToolStripMenuItem,
+            this.anticiposToolStripMenuItem});
             this.sociosToolStripMenuItem.Name = "sociosToolStripMenuItem";
             this.sociosToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
             this.sociosToolStripMenuItem.Text = "Administracion";
@@ -223,28 +225,28 @@
             // sociosToolStripMenuItem1
             // 
             this.sociosToolStripMenuItem1.Name = "sociosToolStripMenuItem1";
-            this.sociosToolStripMenuItem1.Size = new System.Drawing.Size(169, 22);
+            this.sociosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.sociosToolStripMenuItem1.Text = "Socios";
             this.sociosToolStripMenuItem1.Click += new System.EventHandler(this.sociosToolStripMenuItem1_Click);
             // 
             // proveedoresToolStripMenuItem
             // 
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.proveedoresToolStripMenuItem.Text = "Proveedores";
             this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
             // planillaQuincenalToolStripMenuItem
             // 
             this.planillaQuincenalToolStripMenuItem.Name = "planillaQuincenalToolStripMenuItem";
-            this.planillaQuincenalToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.planillaQuincenalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.planillaQuincenalToolStripMenuItem.Text = "Planilla Quincenal";
             this.planillaQuincenalToolStripMenuItem.Click += new System.EventHandler(this.planillaQuincenalToolStripMenuItem_Click);
             // 
             // prestamosToolStripMenuItem
             // 
             this.prestamosToolStripMenuItem.Name = "prestamosToolStripMenuItem";
-            this.prestamosToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.prestamosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.prestamosToolStripMenuItem.Text = "Prestamos";
             this.prestamosToolStripMenuItem.Click += new System.EventHandler(this.prestamosToolStripMenuItem_Click);
             // 
@@ -326,6 +328,13 @@
             this.comprasConcentradoYOtrosToolStripMenuItem.Text = "Compras Concentrado y Otros";
             this.comprasConcentradoYOtrosToolStripMenuItem.Click += new System.EventHandler(this.comprasConcentradoYOtrosToolStripMenuItem_Click);
             // 
+            // anticiposToolStripMenuItem
+            // 
+            this.anticiposToolStripMenuItem.Name = "anticiposToolStripMenuItem";
+            this.anticiposToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.anticiposToolStripMenuItem.Text = "Anticipos";
+            this.anticiposToolStripMenuItem.Click += new System.EventHandler(this.anticiposToolStripMenuItem_Click);
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -382,6 +391,7 @@
         private System.Windows.Forms.ToolStripMenuItem comprasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem comprasConcentradoYOtrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem prestamosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem anticiposToolStripMenuItem;
     }
 }
 

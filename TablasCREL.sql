@@ -11,7 +11,18 @@ create table Socio
 	constraint pkSocio primary key (SocioID),
 )
 
-alter table Socio add DNI varchar(20) not null
+alter table Socio drop column DNI
+alter table Socio add constraint ukTelefono unique (Telefono)
+
+create table Proveedor
+(	
+	ProveedorID int not null,
+	Nombre      varchar(50) not null,
+	Telefono    varchar(20) not null,
+	Activo      bit not null,
+
+	constraint pkProveedor primary key (ProveedorID)
+)
 
 create table ArticuloMedicamentos 
 (
@@ -47,15 +58,7 @@ create table ArticuloConcentrado
 
 alter table ArticuloConcentrado add Costo float not null
 
-create table Proveedor
-(	
-	ProveedorID int not null,
-	Nombre      varchar(50) not null,
-	Telefono    varchar(20) not null,
-	Activo      bit not null,
 
-	constraint pkProveedor primary key (ProveedorID)
-)
 
 
 create table CompraMed
@@ -111,3 +114,66 @@ create table CompraDetalleCon
 	constraint fkCompraDetalleArticuloCon foreign key (ArticuloID) references ArticuloConcentrado,
 )
 
+create table SalidaMed
+(
+	SalidaID      int not null,
+	SocioID   int not null,
+	Fecha         datetime not null,
+	Activo        bit not null,
+	constraint pkSalidaMed primary key (SalidaID),
+	constraint fkSalidaSocioMed foreign key (SocioID) references Socio
+)
+
+create table SalidaDetalleMed
+(
+	SalidaDetID int not null,
+	SalidaID    int not null,
+	ArticuloID  int not null,
+	Cantidad    int not null,
+	Precio       float not null,
+	Activo      bit not null,
+
+	constraint pkSalidaDetalleMed primary key ( SalidaDetID ),
+	constraint fkSalidaDetalleSalidaMed foreign key (SalidaID) references SalidaMed,
+	constraint fkSalidaDetalleArticuloMed foreign key (ArticuloID) references ArticuloMedicamentos,
+)
+
+create table SalidaCon
+(
+	SalidaID      int not null,
+	SocioID		  int not null,
+	Fecha         datetime not null,
+	Activo        bit not null,
+	constraint pkSalidaCon primary key (SalidaID),
+	constraint fkSalidaSocioCon foreign key (SocioID) references Socio
+)
+
+create table SalidaDetalleCon
+(
+	SalidaDetID int not null,
+	SalidaID    int not null,
+	ArticuloID  int not null,
+	Cantidad    int not null,
+	Precio       float not null,
+	Activo      bit not null,
+
+	constraint pkSalidaDetalleCon primary key ( SalidaDetID ),
+	constraint fkSalidaDetalleSalidaCon foreign key (SalidaID) references SalidaCon,
+	constraint fkSalidaDetalleArticuloCon foreign key (ArticuloID) references ArticuloConcentrado,
+)
+
+create table Prestamo 
+(
+	PrestamoID      int not null,
+	SocioID		    int not null,
+	Fecha		    datetime not null,
+	Monto		    float not null,
+	CuotaQuincenal  float not null,
+	MontoRestante   float null,
+	PagoParcial     float null,
+	Pagado			bit not null,
+	Activo			bit not null
+)
+
+
+create table Anticipos

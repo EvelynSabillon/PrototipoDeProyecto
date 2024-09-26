@@ -195,5 +195,12 @@ namespace ProyectoCREL.Forms
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void anticiposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AnticiposLista frm = new AnticiposLista();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
