@@ -161,7 +161,6 @@
             this.cmbCampo.FormattingEnabled = true;
             this.cmbCampo.Items.AddRange(new object[] {
             "SocioID",
-            "DNI",
             "Nombre",
             "Direccion",
             "Telefono"});

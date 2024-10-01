@@ -33,7 +33,6 @@ as
 go
 
 create or alter procedure spConcentradoInsert 
-@articuloid int, 
 @nombre varchar(50),
 @codigo varchar(50),
 @precio float,
@@ -43,6 +42,7 @@ create or alter procedure spConcentradoInsert
 @activo	  bit,
 @costo float
 as
+	declare @articuloid int; 
 	select @articuloid = isnull(max(ArticuloID),0)+1 from ArticuloConcentrado
 	insert into ArticuloConcentrado
 	values ( @articuloid,@nombre, @codigo, @precio, @entrada, @salida, @existencia, @activo, @costo )

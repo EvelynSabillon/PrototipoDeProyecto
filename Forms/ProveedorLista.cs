@@ -104,6 +104,11 @@ namespace ProyectoCREL.Forms
                 adpLeer.Fill(dtleer);
                 dgcrudProv.DataSource = dtleer;
                 conexion.Close();
+
+                txtNombre.Enabled = false;
+                txtDireccion.Enabled = false;
+                txtTelefono.Enabled = false;
+                chkEstado.Enabled = false;
             }
             catch(Exception ex) 
             { 
@@ -115,7 +120,10 @@ namespace ProyectoCREL.Forms
 
         private void dgcrudProv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {   
-
+            txtNombre.Enabled = true;
+            txtDireccion.Enabled = true;
+            txtTelefono.Enabled = true;
+            chkEstado.Enabled = true;
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow filaSeleccionada = dgcrudProv.Rows[e.RowIndex];

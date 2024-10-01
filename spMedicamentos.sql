@@ -31,8 +31,7 @@ as
 	from ArticuloMedicamentos where (ArticuloID = @articuloid or @articuloid = 0) and Activo = 1
 go
 
-create or alter procedure spMedicamentosInsert 
-@articuloid int, 
+create or alter procedure spMedicamentosInsert  
 @nombre varchar(50),
 @codigo varchar(50),
 @precio float,
@@ -42,6 +41,7 @@ create or alter procedure spMedicamentosInsert
 @activo	  bit,
 @costo float
 as
+	declare @articuloid int;
 	select @articuloid = isnull(max(ArticuloID),0)+1 from ArticuloMedicamentos
 	insert into ArticuloMedicamentos
 	values ( @articuloid,@nombre, @codigo, @precio, @entrada, @salida, @existencia, @activo, @costo )

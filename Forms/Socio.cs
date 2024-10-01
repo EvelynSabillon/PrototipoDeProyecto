@@ -45,12 +45,10 @@ namespace ProyectoCREL.Forms
             //Metodo para evitar escirbir el command type  y setear parametros
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@socioid", SqlDbType.Int, 4, "SocioID");
             cmd.Parameters.Add("@nombre", SqlDbType.VarChar, 50, "Nombre");
             cmd.Parameters.Add("@direccion", SqlDbType.VarChar, 100, "Direccion");
             cmd.Parameters.Add("@telefono", SqlDbType.VarChar, 20, "Telefono");
             cmd.Parameters.Add("@activo", SqlDbType.Bit, 1, "Activo");
-            cmd.Parameters.Add("@dni", SqlDbType.VarChar, 20, "DNI");
             return cmd;
         }
 
@@ -68,11 +66,6 @@ namespace ProyectoCREL.Forms
                 bool errores = false;
                 errorProvider1.Clear();
 
-                if (txtDNI.Text.Length != 15)
-                {
-                    errorProvider1.SetError(txtDNI, "Falta la identidad del Socio o no es valida");
-                    errores = true;
-                }
 
                 if (txtNombre.Text.Length == 0)
                 {
@@ -112,7 +105,6 @@ namespace ProyectoCREL.Forms
                     {
                         String[] sexos = { "M", "F" };
 
-                        tabSocio.Rows[0]["dni"] = txtDNI.Text;
                         tabSocio.Rows[0]["nombre"] = txtNombre.Text;
                         tabSocio.Rows[0]["direccion"] = txtDireccion.Text;
                         tabSocio.Rows[0]["telefono"] = txtTelefono.Text;
@@ -132,7 +124,7 @@ namespace ProyectoCREL.Forms
                 {
                     if (ex.Errors[i].Number == 2627)
                     {
-                        MessageBox.Show("El nombre debe ser unico, validar este campo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("El numero de telefono debe ser unico, validar este campo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     else
                     {
@@ -142,48 +134,6 @@ namespace ProyectoCREL.Forms
             }
         }
 
-        private void txtDNI_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                string rawText = new string(txtDNI.Text.Where(char.IsDigit).ToArray());
-
-                if (rawText.Length > 0)
-                {
-                    if (rawText.Length <= 4)
-                    {
-                        txtDNI.Text = rawText;
-                    }
-                    else if (rawText.Length <= 8)
-                    {
-                        txtDNI.Text = rawText.Insert(4, "-");
-                    }
-                    else if (rawText.Length <= 13)
-                    {
-                        txtDNI.Text = rawText.Insert(4, "-").Insert(9, "-");
-                    }
-                    else
-                    {
-                        txtDNI.Text = rawText.Insert(4, "-").Insert(9, "-").Substring(0, 14);
-                    }
-
-                    // Coloca el cursor al final del texto
-                    txtDNI.SelectionStart = txtDNI.Text.Length;
-                }
-            }
-            catch
-            {
-                MessageBox.Show("El formato del DNI debe ser 0000-0000-00000.", "Formato Incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        private void txtDNI_Leave(object sender, EventArgs e)
-        {
-            if (txtDNI.Text.Length != 15)
-            {
-                MessageBox.Show("El formato del DNI debe ser 0000-0000-00000.", "Formato Incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
 
         private void txtTelefono_TextChanged(object sender, EventArgs e)
         {
@@ -228,7 +178,6 @@ namespace ProyectoCREL.Forms
         {
             try
             {
-                txtSocioID.Enabled = false;
 
                 tabSocio = new DataTable();
                 adpSocio.Fill(tabSocio);
@@ -240,8 +189,6 @@ namespace ProyectoCREL.Forms
                 }
                 else
                 {
-                    txtSocioID.Text = tabSocio.Rows[0]["Socioid"].ToString();
-                    txtDNI.Text = tabSocio.Rows[0]["dni"].ToString();
                     txtNombre.Text = tabSocio.Rows[0]["nombre"].ToString();
                     txtDireccion.Text = tabSocio.Rows[0]["direccion"].ToString();
                     txtTelefono.Text = tabSocio.Rows[0]["telefono"].ToString();
