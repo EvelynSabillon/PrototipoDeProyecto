@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label7 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -38,7 +37,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.chkActivo = new System.Windows.Forms.CheckBox();
-            this.txtProductoID = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtEntrada = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -64,15 +62,6 @@
             this.label7.TabIndex = 59;
             this.label7.Text = "Ingreso/ Modificación de Bodega Concentrado";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 72);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 60;
-            this.label1.Text = "Producto ID";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -85,7 +74,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(239, 72);
+            this.label3.Location = new System.Drawing.Point(43, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 62;
@@ -139,13 +128,6 @@
             this.chkActivo.Text = "Activo";
             this.chkActivo.UseVisualStyleBackColor = true;
             // 
-            // txtProductoID
-            // 
-            this.txtProductoID.Location = new System.Drawing.Point(116, 69);
-            this.txtProductoID.Name = "txtProductoID";
-            this.txtProductoID.Size = new System.Drawing.Size(100, 20);
-            this.txtProductoID.TabIndex = 70;
-            // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(116, 109);
@@ -169,7 +151,7 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(285, 69);
+            this.txtCodigo.Location = new System.Drawing.Point(116, 69);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(141, 20);
             this.txtCodigo.TabIndex = 74;
@@ -249,7 +231,6 @@
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtEntrada);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtProductoID);
             this.Controls.Add(this.chkActivo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
@@ -257,7 +238,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -274,7 +254,6 @@
         #endregion
 
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -282,7 +261,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox chkActivo;
-        private System.Windows.Forms.TextBox txtProductoID;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtEntrada;
         private System.Windows.Forms.TextBox txtPrecio;

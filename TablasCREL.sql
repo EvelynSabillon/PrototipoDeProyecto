@@ -176,4 +176,8 @@ create table Prestamo
 )
 
 
-create table Anticipos
+create table Anticipo
+(
+	
+
+)

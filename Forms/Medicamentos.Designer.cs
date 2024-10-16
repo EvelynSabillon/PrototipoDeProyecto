@@ -36,7 +36,6 @@
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtEntrada = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtArticuloID = new System.Windows.Forms.TextBox();
             this.chkActivo = new System.Windows.Forms.CheckBox();
             this.cmdGuardar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -45,7 +44,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtCosto = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -82,7 +80,7 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(284, 69);
+            this.txtCodigo.Location = new System.Drawing.Point(115, 69);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(141, 20);
             this.txtCodigo.TabIndex = 92;
@@ -107,13 +105,6 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(310, 20);
             this.txtNombre.TabIndex = 89;
-            // 
-            // txtArticuloID
-            // 
-            this.txtArticuloID.Location = new System.Drawing.Point(115, 69);
-            this.txtArticuloID.Name = "txtArticuloID";
-            this.txtArticuloID.Size = new System.Drawing.Size(100, 20);
-            this.txtArticuloID.TabIndex = 88;
             // 
             // chkActivo
             // 
@@ -179,7 +170,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(238, 72);
+            this.label3.Location = new System.Drawing.Point(42, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 81;
@@ -193,15 +184,6 @@
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 80;
             this.label2.Text = "Nombre";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(42, 72);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
-            this.label1.TabIndex = 79;
-            this.label1.Text = "Articulo ID";
             // 
             // label7
             // 
@@ -248,7 +230,6 @@
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtEntrada);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtArticuloID);
             this.Controls.Add(this.chkActivo);
             this.Controls.Add(this.cmdGuardar);
             this.Controls.Add(this.label8);
@@ -257,7 +238,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -280,7 +260,6 @@
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtEntrada;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtArticuloID;
         private System.Windows.Forms.CheckBox chkActivo;
         private System.Windows.Forms.Button cmdGuardar;
         private System.Windows.Forms.Label label8;
@@ -289,7 +268,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtCosto;
         private System.Windows.Forms.Label label9;

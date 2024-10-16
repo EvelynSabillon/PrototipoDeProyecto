@@ -30,22 +30,22 @@
         {
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.cmdVerArticulo = new System.Windows.Forms.Button();
+            this.cmdGuardar = new System.Windows.Forms.Button();
+            this.cmdCancelar = new System.Windows.Forms.Button();
             this.cmbOpcion = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtTexto = new System.Windows.Forms.TextBox();
             this.cmbCampo = new System.Windows.Forms.ComboBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cmdCrearProv = new System.Windows.Forms.Button();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
+            this.txtDocumento = new System.Windows.Forms.TextBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.cmdVerProv = new System.Windows.Forms.Button();
+            this.txtProveedorID = new System.Windows.Forms.TextBox();
+            this.txtCompraID = new System.Windows.Forms.TextBox();
+            this.chkActivo = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -76,41 +76,42 @@
             this.dataGridView1.Size = new System.Drawing.Size(682, 339);
             this.dataGridView1.TabIndex = 11;
             // 
-            // button2
+            // cmdVerArticulo
             // 
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(709, 205);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 60);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Ver Articulos Existentes";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cmdVerArticulo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cmdVerArticulo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cmdVerArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdVerArticulo.Location = new System.Drawing.Point(709, 205);
+            this.cmdVerArticulo.Name = "cmdVerArticulo";
+            this.cmdVerArticulo.Size = new System.Drawing.Size(108, 60);
+            this.cmdVerArticulo.TabIndex = 24;
+            this.cmdVerArticulo.Text = "Ver Articulos Existentes";
+            this.cmdVerArticulo.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // cmdGuardar
             // 
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(709, 400);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 60);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "Guardar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.cmdGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cmdGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cmdGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdGuardar.Location = new System.Drawing.Point(709, 400);
+            this.cmdGuardar.Name = "cmdGuardar";
+            this.cmdGuardar.Size = new System.Drawing.Size(108, 60);
+            this.cmdGuardar.TabIndex = 25;
+            this.cmdGuardar.Text = "Guardar";
+            this.cmdGuardar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // cmdCancelar
             // 
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(709, 484);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(108, 60);
-            this.button4.TabIndex = 26;
-            this.button4.Text = "Cancelar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.cmdCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.cmdCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.cmdCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdCancelar.Location = new System.Drawing.Point(709, 484);
+            this.cmdCancelar.Name = "cmdCancelar";
+            this.cmdCancelar.Size = new System.Drawing.Size(108, 60);
+            this.cmdCancelar.TabIndex = 26;
+            this.cmdCancelar.Text = "Cancelar";
+            this.cmdCancelar.UseVisualStyleBackColor = true;
+            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
             // 
             // cmbOpcion
             // 
@@ -167,77 +168,80 @@
             this.cmbCampo.Size = new System.Drawing.Size(120, 21);
             this.cmbCampo.TabIndex = 55;
             // 
-            // button5
+            // cmdCrearProv
             // 
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(216, 112);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 28);
-            this.button5.TabIndex = 93;
-            this.button5.Text = "Crear Proveedor";
-            this.button5.UseVisualStyleBackColor = true;
+            this.cmdCrearProv.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cmdCrearProv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cmdCrearProv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdCrearProv.Location = new System.Drawing.Point(216, 112);
+            this.cmdCrearProv.Name = "cmdCrearProv";
+            this.cmdCrearProv.Size = new System.Drawing.Size(109, 28);
+            this.cmdCrearProv.TabIndex = 93;
+            this.cmdCrearProv.Text = "Crear Proveedor";
+            this.cmdCrearProv.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cmbTipo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(673, 67);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(138, 21);
-            this.comboBox1.TabIndex = 92;
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "Contado",
+            "Pendiente"});
+            this.cmbTipo.Location = new System.Drawing.Point(673, 67);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(138, 21);
+            this.cmbTipo.TabIndex = 92;
             // 
-            // textBox3
+            // txtDocumento
             // 
-            this.textBox3.Location = new System.Drawing.Point(409, 117);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(194, 20);
-            this.textBox3.TabIndex = 91;
+            this.txtDocumento.Location = new System.Drawing.Point(409, 117);
+            this.txtDocumento.Name = "txtDocumento";
+            this.txtDocumento.Size = new System.Drawing.Size(194, 20);
+            this.txtDocumento.TabIndex = 91;
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(409, 67);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(194, 20);
-            this.dateTimePicker1.TabIndex = 90;
+            this.dtpFecha.Location = new System.Drawing.Point(409, 67);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(194, 20);
+            this.dtpFecha.TabIndex = 90;
             // 
-            // button1
+            // cmdVerProv
             // 
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(216, 67);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 39);
-            this.button1.TabIndex = 89;
-            this.button1.Text = "Ver Proveedores Existentes";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmdVerProv.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cmdVerProv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cmdVerProv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdVerProv.Location = new System.Drawing.Point(216, 67);
+            this.cmdVerProv.Name = "cmdVerProv";
+            this.cmdVerProv.Size = new System.Drawing.Size(109, 39);
+            this.cmdVerProv.TabIndex = 89;
+            this.cmdVerProv.Text = "Ver Proveedores Existentes";
+            this.cmdVerProv.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtProveedorID
             // 
-            this.textBox2.Location = new System.Drawing.Point(96, 117);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 88;
+            this.txtProveedorID.Location = new System.Drawing.Point(96, 117);
+            this.txtProveedorID.Name = "txtProveedorID";
+            this.txtProveedorID.Size = new System.Drawing.Size(100, 20);
+            this.txtProveedorID.TabIndex = 88;
             // 
-            // textBox1
+            // txtCompraID
             // 
-            this.textBox1.Location = new System.Drawing.Point(96, 67);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 87;
+            this.txtCompraID.Location = new System.Drawing.Point(96, 67);
+            this.txtCompraID.Name = "txtCompraID";
+            this.txtCompraID.Size = new System.Drawing.Size(100, 20);
+            this.txtCompraID.TabIndex = 87;
             // 
-            // checkBox1
+            // chkActivo
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(711, 116);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(56, 17);
-            this.checkBox1.TabIndex = 86;
-            this.checkBox1.Text = "Activa";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkActivo.AutoSize = true;
+            this.chkActivo.Checked = true;
+            this.chkActivo.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkActivo.Location = new System.Drawing.Point(711, 116);
+            this.chkActivo.Name = "chkActivo";
+            this.chkActivo.Size = new System.Drawing.Size(56, 17);
+            this.chkActivo.TabIndex = 86;
+            this.chkActivo.Text = "Activa";
+            this.chkActivo.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -289,14 +293,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(831, 556);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.cmdCrearProv);
+            this.Controls.Add(this.cmbTipo);
+            this.Controls.Add(this.txtDocumento);
+            this.Controls.Add(this.dtpFecha);
+            this.Controls.Add(this.cmdVerProv);
+            this.Controls.Add(this.txtProveedorID);
+            this.Controls.Add(this.txtCompraID);
+            this.Controls.Add(this.chkActivo);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -307,9 +311,9 @@
             this.Controls.Add(this.cmbCampo);
             this.Controls.Add(this.cmbOpcion);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.cmdCancelar);
+            this.Controls.Add(this.cmdGuardar);
+            this.Controls.Add(this.cmdVerArticulo);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label7);
             this.Name = "CompraMed";
@@ -325,22 +329,22 @@
 
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button cmdVerArticulo;
+        private System.Windows.Forms.Button cmdGuardar;
+        private System.Windows.Forms.Button cmdCancelar;
         private System.Windows.Forms.ComboBox cmbOpcion;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtTexto;
         private System.Windows.Forms.ComboBox cmbCampo;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button cmdCrearProv;
+        private System.Windows.Forms.ComboBox cmbTipo;
+        private System.Windows.Forms.TextBox txtDocumento;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.Button cmdVerProv;
+        private System.Windows.Forms.TextBox txtProveedorID;
+        private System.Windows.Forms.TextBox txtCompraID;
+        private System.Windows.Forms.CheckBox chkActivo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

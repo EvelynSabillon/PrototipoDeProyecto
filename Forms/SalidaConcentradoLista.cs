@@ -29,7 +29,7 @@ namespace ProyectoCREL.Forms
 
             cmbCampo.SelectedIndex = 0;
 
-            adpSalidasCon = new SqlDataAdapter("spComprasMedicamentosActivos", conexion);
+            adpSalidasCon = new SqlDataAdapter("spSalidaConActivos", conexion);
             adpSalidasCon.SelectCommand.CommandType = CommandType.StoredProcedure;
 
             con = conexion;
@@ -124,7 +124,7 @@ namespace ProyectoCREL.Forms
                     tabSalidasCon.Clear();
                     adpSalidasCon.Fill(tabSalidasCon);
 
-                    // Buscar la fila con el mismo Socio y seleccionarla
+                    // Buscar la fila con el mismo salida y seleccionarla
                     foreach (DataGridViewRow row in dataGridView1.Rows)
                     {
                         if ((int)row.Cells["SalidaID"].Value == Salidaid)
@@ -150,9 +150,9 @@ namespace ProyectoCREL.Forms
 
                 if (MessageBox.Show("Desea deshabilitar la Salida?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    SqlCommand cmd = new SqlCommand("spSocioDesactivar", con);
+                    SqlCommand cmd = new SqlCommand("spSalidaConDesactivarYDetalles", con);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Socioid", Salidaid);
+                    cmd.Parameters.AddWithValue("@salidaid", Salidaid);
 
                     try
                     {
@@ -180,7 +180,7 @@ namespace ProyectoCREL.Forms
                     tabSalidasCon.Clear();
                     adpSalidasCon.Fill(tabSalidasCon);
 
-                    // Buscar la fila con el mismo Socioid y seleccionarla
+                    // Buscar la fila con el mismo salidaid y seleccionarla
                     foreach (DataGridViewRow row in dataGridView1.Rows)
                     {
                         if ((int)row.Cells["SalidaID"].Value == Salidaid)
@@ -209,17 +209,17 @@ namespace ProyectoCREL.Forms
                 {
                     case "Todos":
 
-                        spNombre = "spSocioSelect";
+                        spNombre = "spSalidaConSelect";
                         break;
 
                     case "Activos":
 
-                        spNombre = "spSocioActivos";
+                        spNombre = "spSalidaConActivos";
                         break;
 
                     case "Inactivos":
 
-                        spNombre = "spSocioInactivos";
+                        spNombre = "spSalidaConInactivos";
                         break;
                 }
 

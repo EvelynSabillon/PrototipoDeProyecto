@@ -28,7 +28,7 @@ namespace ProyectoCREL.Forms
 
             cmbCampo.SelectedIndex = 0;
 
-            adpSalidasMed = new SqlDataAdapter("spComprasMedicamentosActivos", conexion);
+            adpSalidasMed = new SqlDataAdapter("spSalidaMedActivos", conexion);
             adpSalidasMed.SelectCommand.CommandType = CommandType.StoredProcedure;
 
             con = conexion;
@@ -155,9 +155,9 @@ namespace ProyectoCREL.Forms
 
                 if (MessageBox.Show("Desea deshabilitar la Salida?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    SqlCommand cmd = new SqlCommand("spSocioDesactivar", con);
+                    SqlCommand cmd = new SqlCommand("spSalidaMedDesactivarYDetalles", con);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Socioid", Salidaid);
+                    cmd.Parameters.AddWithValue("@salidaid", Salidaid);
 
                     try
                     {
@@ -185,7 +185,7 @@ namespace ProyectoCREL.Forms
                     tabSalidasMed.Clear();
                     adpSalidasMed.Fill(tabSalidasMed);
 
-                    // Buscar la fila con el mismo Socioid y seleccionarla
+                    // Buscar la fila con el mismo salidaid y seleccionarla
                     foreach (DataGridViewRow row in dataGridView1.Rows)
                     {
                         if ((int)row.Cells["SalidaID"].Value == Salidaid)
@@ -209,17 +209,17 @@ namespace ProyectoCREL.Forms
                 {
                     case "Todos":
 
-                        spNombre = "spSocioSelect";
+                        spNombre = "spSalidaMedSelect";
                         break;
 
                     case "Activos":
 
-                        spNombre = "spSocioActivos";
+                        spNombre = "spSalidaMedActivos";
                         break;
 
                     case "Inactivos":
 
-                        spNombre = "spSocioInactivos";
+                        spNombre = "spSalidaMedInactivos";
                         break;
                 }
 

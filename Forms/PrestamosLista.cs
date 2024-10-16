@@ -21,5 +21,10 @@ namespace ProyectoCREL.Forms
         {
 
         }
+
+        private void btnInsertar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

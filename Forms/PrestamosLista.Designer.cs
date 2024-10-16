@@ -218,6 +218,7 @@
             this.btnInsertar.TabIndex = 25;
             this.btnInsertar.Text = "Insertar";
             this.btnInsertar.UseVisualStyleBackColor = false;
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
             // textBox1
             // 

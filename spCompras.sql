@@ -1,4 +1,4 @@
-
+use CREL
 
 create table CompraMed
 (
@@ -61,6 +61,8 @@ as
 	from CompraMed where (CompraID = @compraid or @compraid = 0 ) and Activo = 0
 go
 
+
+
 go
 create or alter procedure spCompraDetalleMedSelect @compraid int = 0
 as
@@ -70,13 +72,13 @@ as
 go
 
 create or alter procedure spCompraDetalleMedInsert 
-@compradetid int,
 @compraid int,
 @articuloid int,
 @cantidad int,
 @costo float,
 @activo bit
 as
+	declare @compradetid int;
 	select @compradetid = isnull(max(CompraDetID), 0) + 1 from CompraDetalleMed
 	insert into CompraDetalleMed
 	values (@compradetid,@compraid,@articuloid,@cantidad, @costo, @activo)

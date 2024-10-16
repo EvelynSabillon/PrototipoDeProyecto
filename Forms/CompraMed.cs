@@ -53,5 +53,11 @@ namespace ProyectoCREL.Forms
         {
 
         }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea salir sin guardar los cambios?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                this.Dispose();
+        }
     }
 }

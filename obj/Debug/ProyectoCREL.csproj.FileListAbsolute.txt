@@ -30,3 +30,4 @@ C:\Users\easl2\Desktop\ProyectoCREL\obj\Debug\ProyectoCREL.Forms.CompraMed.resou
 C:\Users\easl2\Desktop\ProyectoCREL\obj\Debug\ProyectoCREL.Forms.Prestamo.resources
 C:\Users\easl2\Desktop\ProyectoCREL\obj\Debug\ProyectoCREL.Forms.SalidaConcentradoLista.resources
 C:\Users\easl2\Desktop\ProyectoCREL\obj\Debug\ProyectoCREL.Forms.SalidaMedicamentosLista.resources
+C:\Users\easl2\Desktop\ProyectoCREL\obj\Debug\ProyectoCREL.Forms.VistaProveedores.resources

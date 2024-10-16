@@ -38,6 +38,7 @@
             this.txtTexto = new System.Windows.Forms.TextBox();
             this.cmbCampo = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             // 
             this.cmbOpcion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOpcion.FormattingEnabled = true;
-            this.cmbOpcion.Location = new System.Drawing.Point(500, 438);
+            this.cmbOpcion.Location = new System.Drawing.Point(596, 438);
             this.cmbOpcion.Margin = new System.Windows.Forms.Padding(2);
             this.cmbOpcion.Name = "cmbOpcion";
             this.cmbOpcion.Size = new System.Drawing.Size(135, 21);
@@ -55,7 +56,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(400, 441);
+            this.label1.Location = new System.Drawing.Point(496, 441);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 13);
@@ -86,7 +87,7 @@
             this.cmdDesactivar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.cmdDesactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdDesactivar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.cmdDesactivar.Location = new System.Drawing.Point(129, 425);
+            this.cmdDesactivar.Location = new System.Drawing.Point(238, 425);
             this.cmdDesactivar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdDesactivar.Name = "cmdDesactivar";
             this.cmdDesactivar.Size = new System.Drawing.Size(95, 44);
@@ -163,7 +164,7 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(239, 425);
+            this.button1.Location = new System.Drawing.Point(348, 425);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 44);
@@ -171,11 +172,27 @@
             this.button1.Text = "Generar Reporte";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button2.Location = new System.Drawing.Point(128, 425);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(95, 44);
+            this.button2.TabIndex = 65;
+            this.button2.Text = "VerDetalle";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // ComprasConLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(870, 480);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbOpcion);
             this.Controls.Add(this.label1);
@@ -210,5 +227,6 @@
         private System.Windows.Forms.TextBox txtTexto;
         private System.Windows.Forms.ComboBox cmbCampo;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

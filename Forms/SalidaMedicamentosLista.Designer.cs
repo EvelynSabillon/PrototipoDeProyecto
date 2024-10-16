@@ -160,15 +160,9 @@
             this.cmbCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCampo.FormattingEnabled = true;
             this.cmbCampo.Items.AddRange(new object[] {
-            "EmpleadoID",
-            "DNI",
-            "Nombre",
-            "Direccion",
-            "Telefono",
-            "_Sexo",
-            "Email",
-            "PuestoID",
-            "PuestoNombre"});
+            "SalidaID",
+            "SocioID",
+            "Fecha"});
             this.cmbCampo.Location = new System.Drawing.Point(18, 12);
             this.cmbCampo.Name = "cmbCampo";
             this.cmbCampo.Size = new System.Drawing.Size(165, 21);

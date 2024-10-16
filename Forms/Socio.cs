@@ -35,16 +35,29 @@ namespace ProyectoCREL.Forms
             adpSocio.SelectCommand.CommandType = CommandType.StoredProcedure;
             adpSocio.SelectCommand.Parameters.AddWithValue("@Socioid", SocioId);
 
-            adpSocio.InsertCommand = comando("spSocioInsert", conexion);
-            adpSocio.UpdateCommand = comando("spSocioUpdate", conexion);
+            adpSocio.InsertCommand = comando1("spSocioInsert", conexion);
+            adpSocio.UpdateCommand = comando2("spSocioUpdate", conexion);
 
         }
 
-        private SqlCommand comando(String sql, SqlConnection con)
+        private SqlCommand comando1(String sql, SqlConnection con)
         {
             //Metodo para evitar escirbir el command type  y setear parametros
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@nombre", SqlDbType.VarChar, 50, "Nombre");
+            cmd.Parameters.Add("@direccion", SqlDbType.VarChar, 100, "Direccion");
+            cmd.Parameters.Add("@telefono", SqlDbType.VarChar, 20, "Telefono");
+            cmd.Parameters.Add("@activo", SqlDbType.Bit, 1, "Activo");
+            return cmd;
+        }
+
+        private SqlCommand comando2(String sql, SqlConnection con)
+        {
+            //Metodo para evitar escirbir el command type  y setear parametros
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("socioid", SqlDbType.Int, 4, "SocioId");
             cmd.Parameters.Add("@nombre", SqlDbType.VarChar, 50, "Nombre");
             cmd.Parameters.Add("@direccion", SqlDbType.VarChar, 100, "Direccion");
             cmd.Parameters.Add("@telefono", SqlDbType.VarChar, 20, "Telefono");

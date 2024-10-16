@@ -31,15 +31,30 @@ namespace ProyectoCREL.Forms
             adpMedicamentos.SelectCommand.CommandType = CommandType.StoredProcedure;
             adpMedicamentos.SelectCommand.Parameters.AddWithValue("@articuloid", ArticuloId);
 
-            adpMedicamentos.InsertCommand = comando("spMedicamentosInsert", conexion);
-            adpMedicamentos.UpdateCommand = comando("spMedicamentosUpdate", conexion);
+            adpMedicamentos.InsertCommand = comando1("spMedicamentosInsert", conexion);
+            adpMedicamentos.UpdateCommand = comando2("spMedicamentosUpdate", conexion);
         }
 
-        private SqlCommand comando(string sql, SqlConnection con)
+        private SqlCommand comando1(string sql, SqlConnection con)
         {
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@articuloid", SqlDbType.Int, 4, "ArticuloID");
+            cmd.Parameters.Add("@nombre", SqlDbType.VarChar, 50, "Nombre");
+            cmd.Parameters.Add("@codigo", SqlDbType.VarChar, 50, "Codigo");
+            cmd.Parameters.Add("@precio", SqlDbType.Float, 8, "Precio");
+            cmd.Parameters.Add("@entrada", SqlDbType.Int, 4, "Entrada");
+            cmd.Parameters.Add("@salida", SqlDbType.Int, 4, "Salida");
+            cmd.Parameters.Add("@existencia", SqlDbType.Int, 4, "Existencia");
+            cmd.Parameters.Add("@activo", SqlDbType.Bit, 1, "Activo");
+            cmd.Parameters.Add("@costo", SqlDbType.Float, 8, "Costo");
+            return cmd;
+        }
+
+        private SqlCommand comando2(string sql, SqlConnection con)
+        {
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@articuloid", SqlDbType.Int, 4, "ArticuloId");
             cmd.Parameters.Add("@nombre", SqlDbType.VarChar, 50, "Nombre");
             cmd.Parameters.Add("@codigo", SqlDbType.VarChar, 50, "Codigo");
             cmd.Parameters.Add("@precio", SqlDbType.Float, 8, "Precio");
@@ -52,11 +67,11 @@ namespace ProyectoCREL.Forms
         }
 
 
+
         private void Medicamentos_Load(object sender, EventArgs e)
         {
             try
             {
-                txtArticuloID.Enabled = false;
 
                 tabMedicamentos = new DataTable();
                 adpMedicamentos.Fill(tabMedicamentos);
@@ -67,7 +82,6 @@ namespace ProyectoCREL.Forms
                 }
                 else
                 {
-                    txtArticuloID.Text = tabMedicamentos.Rows[0]["ArticuloID"].ToString();
                     txtNombre.Text = tabMedicamentos.Rows[0]["Nombre"].ToString();
                     txtCodigo.Text = tabMedicamentos.Rows[0]["Codigo"].ToString();
                     txtPrecio.Text = tabMedicamentos.Rows[0]["Precio"].ToString();

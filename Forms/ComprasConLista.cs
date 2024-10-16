@@ -28,7 +28,7 @@ namespace ProyectoCREL.Forms
 
             cmbCampo.SelectedIndex = 0;
 
-            adpComprasCon = new SqlDataAdapter("spComprasMedicamentosActivos", conexion);
+            adpComprasCon = new SqlDataAdapter("spCompraConActivos", conexion);
             adpComprasCon.SelectCommand.CommandType = CommandType.StoredProcedure;
 
             con = conexion;
@@ -125,9 +125,9 @@ namespace ProyectoCREL.Forms
 
                 if (MessageBox.Show("Desea deshabilitar la Compra?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    SqlCommand cmd = new SqlCommand("spSocioDesactivar", con);
+                    SqlCommand cmd = new SqlCommand("spCompraConDesactivarYDetalles", con);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Socioid", Compraid);
+                    cmd.Parameters.AddWithValue("@compraid", Compraid);
 
                     try
                     {
@@ -155,7 +155,7 @@ namespace ProyectoCREL.Forms
                     tabComprasCon.Clear();
                     adpComprasCon.Fill(tabComprasCon);
 
-                    // Buscar la fila con el mismo Socioid y seleccionarla
+                    // Buscar la fila con el mismo compraid y seleccionarla
                     foreach (DataGridViewRow row in dataGridView1.Rows)
                     {
                         if ((int)row.Cells["CompraID"].Value == Compraid)
@@ -207,17 +207,17 @@ namespace ProyectoCREL.Forms
                 {
                     case "Todos":
 
-                        spNombre = "spSocioSelect";
+                        spNombre = "spCompraConSelect";
                         break;
 
                     case "Activos":
 
-                        spNombre = "spSocioActivos";
+                        spNombre = "spCompraConActivos";
                         break;
 
                     case "Inactivos":
 
-                        spNombre = "spSocioInactivos";
+                        spNombre = "spCompraConInactivos";
                         break;
                 }
 
@@ -244,5 +244,6 @@ namespace ProyectoCREL.Forms
         {
             txtTexto.Enabled = true;
         }
+
     }
 }

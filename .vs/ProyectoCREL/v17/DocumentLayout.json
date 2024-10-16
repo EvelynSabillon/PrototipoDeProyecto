@@ -3,16 +3,46 @@
   "WorkspaceRootPath": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|c:\\users\\easl2\\desktop\\proyectocrel\\forms\\proveedorlista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|solutionrelative:forms\\proveedorlista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ProyectoCREL||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|c:\\users\\easl2\\desktop\\proyectocrel\\forms\\proveedorlista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|solutionrelative:forms\\proveedorlista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|c:\\users\\easl2\\desktop\\proyectocrel\\forms\\sociolista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|solutionrelative:forms\\sociolista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|c:\\users\\easl2\\desktop\\proyectocrel\\forms\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|solutionrelative:forms\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|C:\\Users\\easl2\\Desktop\\ProyectoCREL\\forms\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|solutionrelative:forms\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|C:\\Users\\easl2\\Desktop\\ProyectoCREL\\forms\\planillaquincenal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|solutionrelative:forms\\planillaquincenal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|C:\\Users\\easl2\\Desktop\\ProyectoCREL\\forms\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|solutionrelative:forms\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|C:\\Users\\easl2\\Desktop\\ProyectoCREL\\forms\\consultaquincenal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|solutionrelative:forms\\consultaquincenal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|C:\\Users\\easl2\\Desktop\\ProyectoCREL\\forms\\controlleche.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|solutionrelative:forms\\controlleche.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|C:\\Users\\easl2\\Desktop\\ProyectoCREL\\forms\\comprasconlista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|solutionrelative:forms\\comprasconlista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|C:\\Users\\easl2\\Desktop\\ProyectoCREL\\forms\\compracon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|solutionrelative:forms\\compracon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|C:\\Users\\easl2\\Desktop\\ProyectoCREL\\forms\\compracon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|solutionrelative:forms\\compracon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F20DD49E-DADC-4D17-8DF8-4D505D1E14DC}|ProyectoCREL.csproj|c:\\users\\easl2\\desktop\\proyectocrel\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,45 +57,115 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProveedorLista.cs",
-              "DocumentMoniker": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\ProveedorLista.cs",
-              "RelativeDocumentMoniker": "Forms\\ProveedorLista.cs",
-              "ToolTip": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\ProveedorLista.cs",
-              "RelativeToolTip": "Forms\\ProveedorLista.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAhwH0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T21:35:03.783Z",
+              "Title": "ProyectoCREL",
+              "DocumentMoniker": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\ProyectoCREL.csproj",
+              "RelativeDocumentMoniker": "ProyectoCREL.csproj",
+              "ToolTip": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\ProyectoCREL.csproj",
+              "RelativeToolTip": "ProyectoCREL.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-16T00:43:06.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Proveedor.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\Proveedor.cs",
-              "RelativeDocumentMoniker": "Forms\\Proveedor.cs",
-              "ToolTip": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\Proveedor.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\Proveedor.cs [Dise\u00F1o]",
+              "DocumentIndex": 1,
+              "Title": "SocioLista.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\SocioLista.cs",
+              "RelativeDocumentMoniker": "Forms\\SocioLista.cs",
+              "ToolTip": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\SocioLista.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\SocioLista.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T21:30:01.073Z",
+              "WhenOpened": "2024-10-16T00:39:08.563Z",
               "EditorCaption": " [Dise\u00F1o]"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProveedorLista.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\ProveedorLista.cs",
-              "RelativeDocumentMoniker": "Forms\\ProveedorLista.cs",
-              "ToolTip": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\ProveedorLista.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Forms\\ProveedorLista.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "Socio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\Socio.cs",
+              "RelativeDocumentMoniker": "Forms\\Socio.cs",
+              "ToolTip": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\Socio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\Socio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T21:30:02.373Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-10-16T00:39:00.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlanillaQuincenal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\PlanillaQuincenal.cs",
+              "RelativeDocumentMoniker": "Forms\\PlanillaQuincenal.cs",
+              "ToolTip": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\PlanillaQuincenal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\PlanillaQuincenal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T03:31:54.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\MenuForm.cs",
+              "RelativeDocumentMoniker": "Forms\\MenuForm.cs",
+              "ToolTip": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\MenuForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\MenuForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T03:20:35.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConsultaQuincenal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\ConsultaQuincenal.cs",
+              "RelativeDocumentMoniker": "Forms\\ConsultaQuincenal.cs",
+              "ToolTip": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\ConsultaQuincenal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\ConsultaQuincenal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T23:22:34.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ControlLeche.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\ControlLeche.cs",
+              "RelativeDocumentMoniker": "Forms\\ControlLeche.cs",
+              "ToolTip": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\ControlLeche.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\ControlLeche.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T23:22:29.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ComprasConLista.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\ComprasConLista.cs",
+              "RelativeDocumentMoniker": "Forms\\ComprasConLista.cs",
+              "ToolTip": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\ComprasConLista.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\ComprasConLista.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T09:16:53.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CompraCon.cs",
+              "DocumentMoniker": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\CompraCon.cs",
+              "RelativeDocumentMoniker": "Forms\\CompraCon.cs",
+              "ToolTip": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\CompraCon.cs",
+              "RelativeToolTip": "Forms\\CompraCon.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAmwEUAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:39:10.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CompraCon.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\CompraCon.cs",
+              "RelativeDocumentMoniker": "Forms\\CompraCon.cs",
+              "ToolTip": "C:\\Users\\easl2\\Desktop\\ProyectoCREL\\Forms\\CompraCon.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\CompraCon.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:38:58.061Z"
             }
           ]
         }

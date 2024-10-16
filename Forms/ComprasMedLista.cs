@@ -29,7 +29,7 @@ namespace ProyectoCREL.Forms
 
             cmbCampo.SelectedIndex = 0;
 
-            adpComprasMed = new SqlDataAdapter("spComprasMedicamentosActivos", conexion);
+            adpComprasMed = new SqlDataAdapter("spCompraMedActivos", conexion);
             adpComprasMed.SelectCommand.CommandType = CommandType.StoredProcedure;
 
             con = conexion;
@@ -96,9 +96,9 @@ namespace ProyectoCREL.Forms
 
                 if (MessageBox.Show("Desea deshabilitar la Compra?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    SqlCommand cmd = new SqlCommand("spSocioDesactivar", con);
+                    SqlCommand cmd = new SqlCommand("spCompraMedDesactivarYDetalles", con);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Socioid", Compraid);
+                    cmd.Parameters.AddWithValue("@compraid", Compraid);
 
                     try
                     {
@@ -126,7 +126,7 @@ namespace ProyectoCREL.Forms
                     tabComprasMed.Clear();
                     adpComprasMed.Fill(tabComprasMed);
 
-                    // Buscar la fila con el mismo Socioid y seleccionarla
+                    // Buscar la fila con el mismo compraid y seleccionarla
                     foreach (DataGridViewRow row in dataGridView1.Rows)
                     {
                         if ((int)row.Cells["CompraID"].Value == Compraid)
@@ -178,17 +178,17 @@ namespace ProyectoCREL.Forms
                 {
                     case "Todos":
 
-                        spNombre = "spSocioSelect";
+                        spNombre = "spCompraMedSelect";
                         break;
 
                     case "Activos":
 
-                        spNombre = "spSocioActivos";
+                        spNombre = "spCompraMedActivos";
                         break;
 
                     case "Inactivos":
 
-                        spNombre = "spSocioInactivos";
+                        spNombre = "spCompraMedInactivos";
                         break;
                 }
 
